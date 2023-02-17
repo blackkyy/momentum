@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./files/icons/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="player">
+            <div class="player-controls">
+                <img src="./files/icons/play-prev.svg" class="player-but" id="prev">
+                <img src="./files/icons/play.svg" class="player-but" id="play-stop">
+                <img src="./files/icons/play-next.svg" class="player-but" id="next">
+            </div>
+            <div class="progress-bar">
+                <div class="progress">
+                    
+                </div>
+            </div>
+            <div class="music">
+                <audio src="./files/music/Aqua Caelestis.mp3" class="audio"></audio>
+                <li class="play-list">
+                    <li class="play-list" id="first-track">Aqua Caelestis</li>
+                    <li class="play-list" id="second-track">Ennio Morricone</li>
+                    <li class="play-list" id="third-track">River Flows In you</li>
+                    <li class="play-list" id="fourth-track">Summer Wind</li>
+                </li>
+            </div>
+        </div>
+        <div class="weather">
+            <input id="search">
+            <img src="./files/icons/Rain.svg" id="wet-icon">
+            <span class="weather-info"  id="temperature">7°</span>
+            <span class="weather-info"  id="description">description</span>
+            <p><span class="weather-info"  id="wind-speed">wind speed</span>
+            <p><span class="weather-info"  id="humidity">humidity</span>
+        </div>
+    </header>
+    <img class="settings" src="./files/icons/white-gear.svg">
+    <main class="main">
+        <img src="./files/icons/slider-prev.svg" class="slider" id="left">
+        <div class="clock">
+            <span class="time">21:30:56</span>
+            <span class="date">31 may wednesday</span>
+            <span class="greeting">Good morning,</span>
+            <span id="name"></span>
+            <input class="name" type="text" placeholder="Your name">
+        </div>
+        <img src="./files/icons/slider-next.svg" class="slider" id="right">
+    </main>
+    <footer class="footer">
+        <img src="./files/icons/reload.svg" class="reload-icon">
+        <span class='quotes' id="quote">Smart quote</span>
+        <span class='quotes' id="author">Author</span>
+    </footer>
+    <div class="pop-up">
+        <div class="title">
+            <span class="pop-title">SETTINGS</span>
+            <img src="./files/icons/cross.svg" class="cross-icon">
+        </div>
+        <div class="features">
+            <input type="checkbox" class="checkbox" id="player-box" checked>
+            <span>Musical player</span><p>
+            <input type="checkbox" class="checkbox" id="weather-box" checked>
+            <span>Weather</span><p></p>
+            <input type="checkbox" class="checkbox" id="greeting-box" checked>
+            <span>Greeting</span><p></p>
+            <input type="checkbox" class="checkbox" id="quote-box" checked>
+            <span>Quotation</span><p></p>
+            <input type="checkbox" class="checkbox" id="to-do-box" checked>
+            <span>To-do list</span><p></p>  
+        </div>
+
+    </div>        
+    <div class="to-do-list">
+            <input type="text" class="do" placeholder="Add some things to do">
+            <div class="to-dos">
+                
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
