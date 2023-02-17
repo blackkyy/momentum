@@ -92,7 +92,7 @@ audio.addEventListener("ended", nextSong);
 //http://api.openweathermap.org/data/2.5/weather?q=Minsk&appid=83de8b24cfc4f11c6a54a37552b91cdc
 
 const link =
-  "http://api.openweathermap.org/data/2.5/weather?appid=83de8b24cfc4f11c6a54a37552b91cdc&units=metric";
+  "https://api.openweathermap.org/data/2.5/weather?appid=83de8b24cfc4f11c6a54a37552b91cdc&units=metric";
 let input = document.querySelector("#search");
 let CityName;
 let store = {
